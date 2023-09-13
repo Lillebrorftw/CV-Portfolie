@@ -1,0 +1,95 @@
+/* Background color and change the text font*/
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style and position for the brand name and nav bar */
+.navbar {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Color for the brand and font size*/
+.brand-title{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+/* Style and position for the menu */
+.menu{
+    display: flex;
+    justify-content: center;
+}
+/*Changer for the list style to take away the dots*/
+.menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.menu li a{
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: none;
+}
+/* Makes a color when hovering over the text*/
+.menu li:hover{
+    background-color: red;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Style and position for the middle text */
+.intro{
+    color: white;
+    margin-left: 40px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+/* To give the Hello its color*/
+.intro span{
+    color: brown;
+}
+
+/* Position for the icons to get them to be at the bottom */
+
+.social-icons{
+    position: absolute;
+    top: 95%;
+    left: 45%;
+}
+.social-icons ul{
+    display: flex;
+    align-content: center;
+    list-style: none;
+}
+/* To give the icons its color, size and give it some padding */
+.social-icons ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+/* To make it when the mouse hover over the icon it turns it red and gives it a small transition */
+.social-icons li:hover{
+    background-color: red;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Color and position for the footer for it to stay in bottom right corner*/
+footer{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 80%;
+}
+
