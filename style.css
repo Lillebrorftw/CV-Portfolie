@@ -189,7 +189,7 @@ div.container p{
     margin: 0;
 }
 
-/* Media styling set for max-width to make some size difference for different screens*/
+/* Media styling set for max-width to make some changes for different screens*/
 
 @media (max-width:1200px) {
 
@@ -240,5 +240,8 @@ div.container p{
     }
     .social-icons ul{
         padding: 0;
+    }
+    .about-text img {
+        max-width: 200px;
     }
 }
