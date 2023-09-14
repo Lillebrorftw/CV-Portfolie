@@ -1,8 +1,16 @@
-/* Background color and change the text font*/
+/*Some changes so the html and body use the full screen*/
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
 body{
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
+    min-height: 100%;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -21,12 +29,7 @@ body{
     margin: 0.5rem;
 }
 
-/* Style and position for the menu */
-.menu{
-    display: flex;
-    justify-content: center;
-}
-/*Changer for the list style to take away the dots*/
+/*Using flex wrap to have it wrap the brand and a list-style to take away the numbers in the list */ 
 .menu ul{
     margin: 0;
     padding: 0;
@@ -34,13 +37,14 @@ body{
     flex-wrap: wrap;
     list-style: none;
 }
+/*The color for the menu text and font size and text decoration to take away the line under the text*/
 .menu li a{
     color: white;
     font-size: 24px;
     padding: 10px;
     text-decoration: none;
 }
-/* Makes a color when hovering over the text*/
+/*To make the menu text get a color when hovered and giving that a transition as it looks nicer and a border radius to change the corners*/
 .menu li:hover{
     background-color: red;
     border-radius: 10px;
@@ -93,6 +97,7 @@ footer{
     left: 80%;
 }
 
+
 /* Resume Styling*/
 
 .center-resume{
@@ -136,6 +141,7 @@ table tr{
     width: 100%;
 }
 
+
 /*Portfolio Styline*/
 div.polaroid{
     display: block;
@@ -161,4 +167,26 @@ div.container p{
     font-size: 1.5rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
+
+/* About page style */
+
+.about-text img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    border-radius: 45px;
+    opacity: 0.8;
+}
+
+.about-text p{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
 
