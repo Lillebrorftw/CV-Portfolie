@@ -1,0 +1,247 @@
+/*Some changes so the html and body use the full screen*/
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style and position for the brand name and nav bar */
+.navbar {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Color for the brand and font size*/
+.brand-title{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+/*Using flex wrap to have it wrap the brand and a list-style to take away the numbers in the list */ 
+.menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+/*The color for the menu text and font size and text decoration to take away the line under the text*/
+.menu li a{
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: none;
+}
+/*To make the menu text get a color when hovered and giving that a transition as it looks nicer and a border radius to change the corners*/
+.menu li:hover{
+    background-color: red;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Style and position for the middle text */
+.intro{
+    color: white;
+    margin-left: 40px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+/* To give the Hello its color*/
+.intro span{
+    color: brown;
+}
+
+/* Position for the icons to get them to be at the bottom */
+
+.social-icons{
+    position: absolute;
+    top: 95%;
+    left: 45%;
+}
+.social-icons ul{
+    display: flex;
+    align-content: center;
+    list-style: none;
+}
+/* To give the icons its color, size and give it some padding */
+.social-icons ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+/* To make it when the mouse hover over the icon it turns it red and gives it a small transition */
+.social-icons li:hover{
+    background-color: red;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Color and position for the footer for it to stay in bottom right corner*/
+footer{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 80%;
+}
+
+
+/* Resume Styling*/
+
+.center-resume{
+    display: flex;
+    flex-direction:column;
+    height: 400px;
+
+}
+h2{
+    color: brown;
+    text-align: center;
+    padding: 10px;
+}
+
+.resume-text{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+tbody{
+    display: table-column;
+    flex-grow: 0;
+}
+/* Styling for the table and making them collapse so they come together */
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+table td{
+    border: 1px white solid;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+table tr{
+    width: 100%;
+}
+
+
+/*Portfolio Styline*/
+div.polaroid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+div.polaroid {
+    max-width: 300px;
+    width: 40%;
+    background-color: rgb(151, 151, 151);
+    margin-bottom: 10px;
+}
+  
+div.container {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 25px;
+}
+div.container p{
+    color: white;
+    font-size: 1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+/* About page style */
+
+.about-text img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    border-radius: 45px;
+    opacity: 0.8;
+}
+
+.about-text p{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Media styling set for max-width to make some changes for different screens*/
+
+@media (max-width:1200px) {
+
+    html{
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width:601px) {
+    .about-text img{
+        max-width: 300px;
+    }
+    .resume-text{
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width:501px) {
+
+    html{
+        font-size: 70%;
+    }
+    .about-text img{
+        max-width: 250px;
+    }
+    .resume-text{
+        font-size: 70%;
+    }
+    .social-icons ul{
+        padding: 0;
+    }
+    footer p{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .resume-text{
+        font-size: 50%;
+    }
+    table td{
+        padding: 5px;
+    }
+    footer{
+        margin: 0;
+    }
+    footer p{
+        margin: 0;
+    }
+    .social-icons ul{
+        padding: 0;
+    }
+    .about-text img {
+        max-width: 200px;
+    }
+}
