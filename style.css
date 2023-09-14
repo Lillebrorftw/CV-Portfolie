@@ -189,4 +189,56 @@ div.container p{
     margin: 0;
 }
 
+/* Media styling set for max-width to make some size difference for different screens*/
 
+@media (max-width:1200px) {
+
+    html{
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width:601px) {
+    .about-text img{
+        max-width: 300px;
+    }
+    .resume-text{
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width:501px) {
+
+    html{
+        font-size: 70%;
+    }
+    .about-text img{
+        max-width: 250px;
+    }
+    .resume-text{
+        font-size: 70%;
+    }
+    .social-icons ul{
+        padding: 0;
+    }
+    footer p{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .resume-text{
+        font-size: 50%;
+    }
+    table td{
+        padding: 5px;
+    }
+    footer{
+        margin: 0;
+    }
+    footer p{
+        margin: 0;
+    }
+    .social-icons ul{
+        padding: 0;
+    }
+}
